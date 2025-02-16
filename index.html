@@ -1,19 +1,268 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebCoin iCash</title>
 
     <!-- link bootstrap css file -->
-     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-</head>
-<body>
-    <h1>WebCoin iCash</h1>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">    
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae cupiditate architecto eos ut molestias! Voluptas itaque quis obcaecati qui sed, enim maiores incidunt iste consequatur dolorem aperiam omnis unde rem!</p>
+    <!-- link bootstrap icons -->
+     <link rel="stylesheet" href="./bootstrap/icons/font/bootstrap-icons.css">
+</head>
+
+<body">
+    <!-- Barra de Navegação -->
+     <nav class="navbar bg-warning navbar-expand-md py-3 sticky-top">
+
+        <div class="container-fluid">
+
+            <!-- brand -->
+            <a href="#home" class="navbar-brand d-flex align-items-center p-1 border rounded border-dark">
+                <!-- icon -->
+                <i class="bi bi-currency-bitcoin fs-.9 me-1"></i>
+                <span class="text-black fw-bold me-1">WebCoin</span>iCash</a>
+
+                <!-- Botão Menu -->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarMenu" >
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                <!-- itens de menu -->
+                 <div class="collapse navbar-collapse justify-content-end" id="navBarMenu">
+
+                    <ul class="navbar-nav text-center d-flex align-items-center text-uppercase">
+
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#desenvolvimento" class="nav-link">Desenvolvimento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#adquirir" class="nav-link">Adquirir</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#bonus" class="nav-link">Bônus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feedback" class="nav-link">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+
+                    </ul>
+
+                 </div>
+
+        </div>
+
+     </nav> <!-- Fim NavBar -->
+
+     <!-- Seção Home -->
+      <section id="home">
+        
+        <div class="container">
+
+            <!-- grid system -->
+            <div class="row py-2">
+
+                <div class="col">
+
+                    <!-- <h3>Home</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p> -->
+
+                    <div class="carousel slide " data-bs-ride="carousel" id="ads">
+
+                        <!-- Exibindo os indicadores dos slides do carousel -->
+                         <div class="carousel-indicators">
+                            <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                            <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                            <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+                        </div>
+    
+                        <!-- Armazena os slides que serão exibidos no carousel -->
+                        <div class="carousel-inner">
+    
+                            <!-- Obs.: alterar fotos para fotos do projeto -->
+                            <div class="carousel-item active" data-bs-interval="2000"> 
+                                <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100">
+    
+                                <!-- Textos Sobre as Imagens do Carousel -->
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <h5>Título do Slide</h5>
+    
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque excepturi quasi inventore. Consectetur officiis nam, in non alias corporis? Voluptatem ullam velit tempore expedita nobis aliquam facere commodi eligendi quaerat?
+                                    </p>
+    
+                                </div>
+    
+    
+                            </div>
+    
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100">
+    
+                                <!-- Textos Sobre as Imagens do Carousel -->
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <h5>Título do Slide</h5>
+                                    
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque excepturi quasi inventore. Consectetur officiis nam, in non alias corporis? Voluptatem ullam velit tempore expedita nobis aliquam facere commodi eligendi quaerat?
+                                    </p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100">
+    
+                                <!-- Textos Sobre as Imagens do Carousel -->
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <h5>Título do Slide</h5>
+                                    
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque excepturi quasi inventore. Consectetur officiis nam, in non alias corporis? Voluptatem ullam velit tempore expedita nobis aliquam facere commodi eligendi quaerat?
+                                    </p>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <!-- Botões de Retroceder e Avançar os Slides -->
+                        <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    
+                        <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+      </section> 
+
+     <!-- Seção Desenvolvimento -->
+      <section id="desenvolvimento" class="bg-secondary-subtle py-3">
+
+        <div class="container">
+            <!-- grid system -->
+            <div class="row py-2">
+
+                <div class="col">
+
+                    <h3>Desenvolvimento</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p>
+
+                </div>
+
+            </div>
+        </div>
+
+      </section> 
+
+     <!-- Seção Adquirir -->
+      <section id="adquirir">
+
+        <div class="container">
+
+            <!-- grid system -->
+            <div class="row py-2">
+
+                <div class="col">
+
+                    <h3>Adquirir</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+      </section> 
+
+     <!-- Seção Bônus -->
+      <section id="bonus" class="bg-secondary-subtle py-3">
+
+        <div class="container">
+
+            <!-- grid system -->
+            <div class="row py-2">
+
+                <div class="col">
+
+                    <h3>Bônus</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+      </section> 
+
+     <!-- Seção Feedback -->
+      <section id="feedback">
+
+        <div class="container">
+
+            <!-- grid system -->
+            <div class="row py-2">
+
+                <div class="col">
+
+                    <h3>Feedback</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+      </section> 
+
+     <!-- Seção Sobre -->
+      <section id="sobre" class="bg-secondary-subtle py-3">
+
+        <div class="container">
+
+            <!-- grid system -->
+            <div class="row py-2">
+
+                <div class="col">
+
+                    <h3>Sobre</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+      </section> 
+
 
     <!-- link bootstrap js file -->
-    <link rel="stylesheet" href="./bootstrap/js/bootstrap.bundle.js">
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
