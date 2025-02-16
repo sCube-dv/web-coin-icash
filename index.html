@@ -85,7 +85,7 @@
                         <div class="carousel-inner">
     
                             <!-- Obs.: alterar fotos para fotos do projeto -->
-                            <div class="carousel-item active" data-bs-interval="2000"> 
+                            <div class="carousel-item active" data-bs-interval="3000"> 
                                 <img src="./img/slide1.jpg" alt="" class="d-block w-100">
     
                                 <!-- Textos Sobre as Imagens do Carousel -->
@@ -102,7 +102,7 @@
     
                             </div>
     
-                            <div class="carousel-item" data-bs-interval="1000">
+                            <div class="carousel-item" data-bs-interval="4000">
                                 <img src="./img/slide2.jpg" alt="" class="d-block w-100">
     
                                 <!-- Textos Sobre as Imagens do Carousel -->
@@ -148,12 +148,11 @@
       </section> 
 
      <!-- Seção Desenvolvimento -->
-      <section id="desenvolvimento" class="bg-secondary-subtle py-3">
+      <section id="desenvolvimento" class="bg-secondary-subtle py-3 mt-5">
 
-        <div class="container">
+        <div class="container mt-5">
             <!-- grid system -->
              
-
             <div class="text-center">
                 <div class="row py-2">
 
@@ -225,11 +224,66 @@
             <!-- grid system -->
             <div class="row py-2">
 
-                <div class="col">
+                <div class="col text-center py-5  my-5">
 
-                    <h3>Adquirir</h3>
+                    <h2 class="mb-5">Adquira WebCoin iCash na Pré-venda!</h2>
+                    <p class="lead mb-3">Entre para o futuro das criptomoedas! WebCoin iCash oferece segurança, rapidez e valorização sustentável. Não perca a oportunidade de entrar antes do mercado.</p>
 
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias, pariatur maxime fugiat incidunt cumque quaerat! Fugit qui ex, harum animi nostrum minus. Voluptate autem, omnis modi dignissimos in quibusdam cum illo officiis qui laboriosam, exercitationem ducimus nulla nobis! Cupiditate mollitia eveniet quod pariatur repellendus assumenda. Dolore assumenda atque est dicta impedit obcaecati numquam at repellendus minima dolor ex eos error provident tenetur soluta consequatur recusandae corrupti odio illum aliquid vero, placeat itaque laborum! Qui recusandae nisi excepturi dignissimos reiciendis, blanditiis quidem modi nulla, voluptate maxime cum veniam. Sequi consequuntur esse excepturi aspernatur tenetur totam eligendi iusto! Molestias, enim quae?</p>
+                    <button class="btn btn-warning btn-lg shadow" data-bs-toggle="modal" data-bs-target="#preVendaModal">Quero Participar</button>
+
+                </div>
+
+                <!-- Modal Pré-venda -->
+                <div class="modal fade" id="preVendaModal" tabindex="-1" aria-labelledby="preVendaModalLabel" aria-hidden="true">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header bg-warning">
+
+                                <h5 class="modal-title" id="preVendaModalLabel">Cadastro para Pré-venda</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                
+                            </div>
+
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        
+                                        <input type="text" class="form-control" id="nome" placeholder=" " required>
+                                        <label for="nome" class="form-label">Nome</label>
+
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+
+                                        
+                                        <input type="email" class="form-control" id="email" 
+                                        required placeholder=" ">
+                                        <label for="email" class="form-label">E-mail</label>
+
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+
+                                        
+                                        <input type="number" class="form-control" id="quantidade" min="1" placeholder=" " required>
+                                        <label for="quantidade" class="form-label">Quantidade Desejada</label>
+
+
+                                    </div>
+
+                                    <button type="submit" class="btn btn-warning">Enviar</button>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
